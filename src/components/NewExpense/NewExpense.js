@@ -4,6 +4,7 @@ import ExpenseForm from './ExpenseForm';
 import './NewExpense.css';
 
 const NewExpense = (props) => {
+  //() 안 이름은 알아서 정하기
   const saveExpenseDataHandler = (enteredExpenseData) => {
     const expenseData = {
       ...enteredExpenseData,
@@ -14,6 +15,7 @@ const NewExpense = (props) => {
   };
   return (
     <div className="new-expense">
+      {/* nameing is up to you */}
       <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
     </div>
   );
